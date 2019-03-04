@@ -1,4 +1,5 @@
 package rocks.zipcode.assessment2.fundamentals;
+import java.util.*;
 
 /**
  * @author leon on 28/11/2018.
@@ -11,7 +12,7 @@ public class StringUtils {
      */
     public static String padLeft(String stringToBePadded, int amountOfPadding) {
         return null;
-    }
+      }
 
     /**
      * @param stringToBePadded - string value to be flushed left
@@ -19,7 +20,7 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return null;
+    return null;
     }
 
     /**
@@ -36,7 +37,11 @@ public class StringUtils {
      * @return - true if string only contains alpha characters
      */
     public static Boolean isAlphaString(String string) {
-        return null;
+        if(string.matches(".*[a-z].*")){
+            return true;
+        }
+
+        return false;
     }
 
     /**
@@ -44,14 +49,21 @@ public class StringUtils {
      * @return - true if string only contains numeric characters
      */
     public static Boolean isNumericString(String string) {
-        return null;
+        if(string.matches(".*\\d+.*")){
+            return true;
+        }
+            return false;
     }
+
 
     /**
      * @param string - string to be evaluated
      * @return - true if string only contains special characters
      */
     public static Boolean isSpecialCharacterString(String string) {
-        return null;
+        if(!string.matches(".*\\d+.*") && !string.matches(".*[a-z].*")){
+            return true;
+        }
+        return false;
     }
 }

@@ -1,5 +1,7 @@
 package rocks.zipcode.assessment2.fundamentals;
 
+import javafx.util.converter.CharacterStringConverter;
+
 public class BasicStringUtils {
     /**
      * @param string1 - Base string to be added to
@@ -7,7 +9,8 @@ public class BasicStringUtils {
      * @return concatenation of `string1` and `string2`
      */
     public static String concatentate(String string1, String string2) {
-        return null;
+        String result = string1 + string2;
+        return result;
     }
 
     /**
@@ -15,7 +18,8 @@ public class BasicStringUtils {
      * @return an identical string with characters in reverse order
      */
     public static String reverse(String string1) {
-        return null;
+        String reverse = new StringBuilder(string1).reverse().toString();
+        return reverse;
     }
 
     /**
@@ -24,7 +28,11 @@ public class BasicStringUtils {
      * @return concatenation of the reverse of `string1` and reverse of `string2`
      */
     public static String reverseThenConcatenate(String string1, String string2) {
-        return null;
+        StringBuilder reverse1 = new StringBuilder(string1).reverse();
+        StringBuilder reverse2 = new StringBuilder(string2).reverse();
+
+        String reversed = reverse1.toString() + reverse2.toString();
+        return reversed;
     }
 
     /**
@@ -33,6 +41,14 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
+            char[] chars = charactersToRemove.toCharArray();
+            for(int i = 0; i < string.length(); i++){
+
+            }
+
+
+
+
         return null;
     }
 

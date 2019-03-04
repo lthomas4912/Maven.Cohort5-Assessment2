@@ -1,5 +1,10 @@
 package rocks.zipcode.assessment2.arrays;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+
 /**
  * @author leon on 28/11/2018.
  */
@@ -20,7 +25,13 @@ public class IntegerArrayUtils {
      * @return `integerArray` with `valueToBeInserted` at index number `indexToInsertAt`
      */
     public static Integer[] replace(Integer[] integerArray, int indexToInsertAt, Integer valueToBeInserted) {
+        List<Integer> result = new ArrayList<>(integerArray.length);
+
+
+
         return null;
+
+
     }
 
     /**
@@ -29,7 +40,7 @@ public class IntegerArrayUtils {
      * @return element located at `indexToFetch`
      */
     public static Integer get(Integer[] integerArray, Integer indexToFetch) {
-        return null;
+        return integerArray[indexToFetch];
     }
 
     /**
@@ -37,7 +48,18 @@ public class IntegerArrayUtils {
      * @return identical array with even-values incremented by 1 and odd-values decremented by 1
      */
     public static Integer[] incrementEvenDecrementOdd(Integer[] integerArray) {
-        return null;
+        Integer [] array = new Integer[integerArray.length];
+            for(int i = 0; i < array.length; i++){
+                Integer num = array[i];
+                if(num%2== 0){
+                    num++;
+                }else if (num%2 == 1){
+                    num--;
+                } else{
+                    return array;
+                }
+            }
+        return array;
     }
 
     /**
@@ -45,6 +67,7 @@ public class IntegerArrayUtils {
      * @return identical array with even-values incremented by 1
      */
     public static Integer[] incrementEven(Integer[] integerArray) {
+
         return null;
     }
 
