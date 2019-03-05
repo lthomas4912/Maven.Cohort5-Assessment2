@@ -1,6 +1,6 @@
 package rocks.zipcode.assessment2.fundamentals;
 
-import javafx.util.converter.CharacterStringConverter;
+
 
 public class PredicateUtilities {
     /**
